@@ -1,0 +1,20 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "globalEnv": ["NODE_ENV", "NEXT_PUBLIC_HIGHLIGHT_PROJECT_ID"],
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^db:generate", "^build"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+    },
+    "typescript": {},
+    "dev": {
+      "dependsOn": ["^db:generate"],
+      "cache": false,
+      "persistent": true
+    },
+    "db:generate": { "cache": false },
+    "db:push": { "cache": false },
+    "clean": { "cache": false }
+  }
+}

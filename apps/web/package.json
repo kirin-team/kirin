@@ -1,0 +1,31 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^13.4.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native-web": "^0.18.12",
+    "ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^18.17.1",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.14",
+    "babel-plugin-react-native-web": "^0.18.12",
+    "eslint-config-custom": "workspace:*",
+    "postcss": "^8.4.27",
+    "tailwind-config": "workspace:*",
+    "tailwindcss": "^3.3.3",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.9.5"
+  }
+}

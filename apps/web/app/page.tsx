@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { Button } from 'ui'
+import { Button } from 'ui';
 
 export default function Web() {
   return (
@@ -8,5 +8,5 @@ export default function Web() {
       <h1>Web</h1>
       <Button onClick={() => console.log('Pressed!')} text="Boop" />
     </div>
-  )
+  );
 }

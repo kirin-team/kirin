@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "negotiator": "^0.6.3",
     "next": "^13.4.12",
+    "next-build-id": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native-web": "^0.18.12",
     "ui": "workspace:*"
   },
   "devDependencies": {
+    "@types/negotiator": "^0.6.1",
     "@types/node": "^18.17.1",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",

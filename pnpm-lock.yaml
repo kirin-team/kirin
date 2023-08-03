@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@grafbase/sdk':
+        specifier: ^0.3.0
+        version: 0.3.0
       dotenv-cli:
         specifier: ^7.2.1
         version: 7.2.1
@@ -2259,6 +2262,14 @@ packages:
 
   /@grafbase/sdk@0.1.0:
     resolution: {integrity: sha512-ERXhlUHoeW0cZZe2gPnSKffihVkUwGApqkYS2jeieYhzNWhUH+tnds/7wFqKMKer54kOkllb7bZuDkw35rbG2w==}
+    engines: {node: '>=16.13.0'}
+    dependencies:
+      dotenv: 16.3.1
+      type-fest: 3.13.1
+    dev: true
+
+  /@grafbase/sdk@0.3.0:
+    resolution: {integrity: sha512-kvpNPbtHwVr1EDcY3nv5dQH98+M/9dM8Sp8Lcd9tc2Ayi3/12CkJCxSKBDaYf4MA5e8e05DGmfo+CRTTP1rsAQ==}
     engines: {node: '>=16.13.0'}
     dependencies:
       dotenv: 16.3.1

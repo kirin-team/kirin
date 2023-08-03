@@ -26,32 +26,6 @@
 
 A glimpse of what a Matrix client should be.
 
-## Roadmap
-
-- [ ] End-to-End Encryption
-- [ ] VoIP 1to1
-- [ ] VoIP Jitsi
-- [ ] Spaces
-- [ ] Widgets
-- [ ] Threads
-- [ ] SSO
-- [ ] Multi Account
-- [ ] Multi Language
-  - [x] English
-  - [ ] Serbian
-  - [ ] Croatian
-  - [ ] Japanese
-  - [ ] Chinese
-  - [ ] German
-  - [ ] French
-  - [ ] Spanish
-  - [ ] Italian
-  - [ ] Russian
-
-See the [open issues](https://github.com/d-one-company/glimpse/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.

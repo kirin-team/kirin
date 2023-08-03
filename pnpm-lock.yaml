@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@grafbase/sdk':
+        specifier: ^0.3.0
+        version: 0.3.0
       dotenv-cli:
         specifier: ^7.2.1
         version: 7.2.1
@@ -17,6 +20,9 @@ importers:
       eslint-config-custom:
         specifier: workspace:*
         version: link:packages/eslint-config-custom
+      husky:
+        specifier: ^8.0.3
+        version: 8.0.3
       npm-run-all:
         specifier: ^4.1.5
         version: 4.1.5
@@ -130,19 +136,19 @@ importers:
 
   packages/db:
     dependencies:
-      '@prisma/client':
-        specifier: 5.1.0
-        version: 5.1.0(prisma@5.1.0)
       tsconfig:
         specifier: workspace:*
         version: link:../tsconfig
     devDependencies:
+      '@grafbase/sdk':
+        specifier: ~0.1.0
+        version: 0.1.0
       '@types/node':
         specifier: ^18.17.1
         version: 18.17.1
-      prisma:
-        specifier: ^5.1.0
-        version: 5.1.0
+      grafbase:
+        specifier: ^0.29.0
+        version: 0.29.0
       typescript:
         specifier: ^4.9.5
         version: 4.9.5
@@ -2214,6 +2220,62 @@ packages:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
     dev: false
 
+  /@grafbase/cli-aarch64-apple-darwin@0.29.0:
+    resolution: {integrity: sha512-0IUIIhSrQAImt6wsFh+XtK4DAkNSSTtjAUr/SzFKIUjE5QYFSXY2oISCovutqZSdV2QQZiqEdgqSlThvFJbwmg==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@grafbase/cli-aarch64-unknown-linux-musl@0.29.0:
+    resolution: {integrity: sha512-NCqGFiFqAlQ5LIk9x1B5g6CdIrxnwAhVJz/BWLdz2eis1/mmfQtUsrpqVbiBu0I13Wg4C2OhNh0GqZIoz9E65A==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@grafbase/cli-x86_64-apple-darwin@0.29.0:
+    resolution: {integrity: sha512-ki1Py0ROXTcKtr9jgeOXWoByAqB3Xmhpo/hgxEojmU0EI2kFn7QMarx6lzl3z+ur4NxW515CzAjTdfr1qkodOw==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@grafbase/cli-x86_64-pc-windows-msvc@0.29.0:
+    resolution: {integrity: sha512-gjDrN6bUCPYsyVJmZE5pZoihha9M/b7td68vvaJadEhW7CysWZ8V/ZFc1q/hLlERt8Kq2FlEoxU1bG44QYCscA==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@grafbase/cli-x86_64-unknown-linux-musl@0.29.0:
+    resolution: {integrity: sha512-MLl5uX6+6fn/UPcpglG4hyEEtRtfund6r9641uYPY+VgcUOeH7Nq4vbwuGYG+fYWW7q0Q8ColSVdF/T98JfNhw==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@grafbase/sdk@0.1.0:
+    resolution: {integrity: sha512-ERXhlUHoeW0cZZe2gPnSKffihVkUwGApqkYS2jeieYhzNWhUH+tnds/7wFqKMKer54kOkllb7bZuDkw35rbG2w==}
+    engines: {node: '>=16.13.0'}
+    dependencies:
+      dotenv: 16.3.1
+      type-fest: 3.13.1
+    dev: true
+
+  /@grafbase/sdk@0.3.0:
+    resolution: {integrity: sha512-kvpNPbtHwVr1EDcY3nv5dQH98+M/9dM8Sp8Lcd9tc2Ayi3/12CkJCxSKBDaYf4MA5e8e05DGmfo+CRTTP1rsAQ==}
+    engines: {node: '>=16.13.0'}
+    dependencies:
+      dotenv: 16.3.1
+      type-fest: 3.13.1
+    dev: true
+
   /@graphql-typed-document-node/core@3.2.0(graphql@15.8.0):
     resolution: {integrity: sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==}
     peerDependencies:
@@ -2486,28 +2548,6 @@ packages:
       picocolors: 1.0.0
       tslib: 2.6.1
     dev: false
-
-  /@prisma/client@5.1.0(prisma@5.1.0):
-    resolution: {integrity: sha512-aIxuXlH3p3Vy91buodQhYgAD9m0yuxJzpXMhc1ejQ/WN3pNNWzBA0iDcBObLq8DMdszcXmoLAk3hiRq/ZwBsOw==}
-    engines: {node: '>=16.13'}
-    requiresBuild: true
-    peerDependencies:
-      prisma: '*'
-    peerDependenciesMeta:
-      prisma:
-        optional: true
-    dependencies:
-      '@prisma/engines-version': 5.1.0-28.a9b7003df90aa623086e4d6f4e43c72468e6339b
-      prisma: 5.1.0
-    dev: false
-
-  /@prisma/engines-version@5.1.0-28.a9b7003df90aa623086e4d6f4e43c72468e6339b:
-    resolution: {integrity: sha512-jTwE2oy1yjICmTfnCR0ASIpuMZXZ18sUzQXB7V0RMbrM9OlcmbUwXPuYhnxXuWN8XwRmujeIhsXs/Zeh+fjPOQ==}
-    dev: false
-
-  /@prisma/engines@5.1.0:
-    resolution: {integrity: sha512-HqaFsnPmZOdMWkPq6tT2eTVTQyaAXEDdKszcZ4yc7DGMBIYRP6j/zAJTtZUG9SsMV8FaucdL5vRyxY/p5Ni28g==}
-    requiresBuild: true
 
   /@react-native-community/cli-clean@11.3.5:
     resolution: {integrity: sha512-1+7BU962wKkIkHRp/uW3jYbQKKGtU7L+R3g59D8K6uLccuxJYUBJv18753ojMa6SD3SAq5Xh31bAre+YwVcOTA==}
@@ -4156,6 +4196,11 @@ packages:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
     engines: {node: '>=12'}
 
+  /dotenv@16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
+    engines: {node: '>=12'}
+    dev: true
+
   /ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: false
@@ -5292,6 +5337,18 @@ packages:
   /graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
+  /grafbase@0.29.0:
+    resolution: {integrity: sha512-H0ZVWWMMQZvHKwMV3Uo/kBTzK5TXsElrvo0UDfkNqcK5keYmFZ0rx2L0eB2Y+RV1pCUsMy04+vbOXd2X/66LiQ==}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@grafbase/cli-aarch64-apple-darwin': 0.29.0
+      '@grafbase/cli-aarch64-unknown-linux-musl': 0.29.0
+      '@grafbase/cli-x86_64-apple-darwin': 0.29.0
+      '@grafbase/cli-x86_64-pc-windows-msvc': 0.29.0
+      '@grafbase/cli-x86_64-unknown-linux-musl': 0.29.0
+    dev: true
+
   /graphql-tag@2.12.6(graphql@15.8.0):
     resolution: {integrity: sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==}
     engines: {node: '>=10'}
@@ -5400,6 +5457,12 @@ packages:
     resolution: {integrity: sha512-nZXjEF2nbo7lIw3mgYjItAfgQXog3OjJogSbKa2CQIIvSGWcKgeJnQlNXip6NglNzYH45nSRiEVimMvYL8DDqQ==}
     engines: {node: '>=14.18.0'}
     dev: false
+
+  /husky@8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /hyphenate-style-name@1.0.4:
     resolution: {integrity: sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==}
@@ -7465,14 +7528,6 @@ packages:
       react-is: 18.2.0
     dev: false
 
-  /prisma@5.1.0:
-    resolution: {integrity: sha512-wkXvh+6wxk03G8qwpZMOed4Y3j+EQ+bMTlvbDZHeal6k1E8QuGKzRO7DRXlE1NV0WNgOAas8kwZqcLETQ2+BiQ==}
-    engines: {node: '>=16.13'}
-    hasBin: true
-    requiresBuild: true
-    dependencies:
-      '@prisma/engines': 5.1.0
-
   /process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
     dev: false
@@ -8849,6 +8904,11 @@ packages:
     resolution: {integrity: sha512-Ne2YiiGN8bmrmJJEuTWTLJR32nh/JdL1+PSicowtNb0WFpn59GK8/lfD61bVtzguz7b3PBt74nxpv/Pw5po5Rg==}
     engines: {node: '>=8'}
     dev: false
+
+  /type-fest@3.13.1:
+    resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
+    engines: {node: '>=14.16'}
+    dev: true
 
   /type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}

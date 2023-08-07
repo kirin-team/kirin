@@ -7,6 +7,7 @@
 
 - [Triaging](./contributing/repository/triaging.md)
 - [Linting](./contributing/repository/linting.md)
+- [Release Channels](./contributing/repository/release-channels.md)
 - [Pull Request Descriptions](./contributing/repository/pull-request-descriptions.md)
 
 ## Core

@@ -1,6 +1,6 @@
 # Linting
 
-The Glimpse repository runs [ESLint](https://eslint.org) and [Prettier](https://prettier.io) to lint and format all code.
+The Kirin repository runs [ESLint](https://eslint.org) and [Prettier](https://prettier.io) to lint and format all code.
 
 To lint all code you can run:
 
@@ -20,7 +20,7 @@ Not all rules can be auto-fixed, those require manual changes.
 
 We recommend installing [ESLint for VS Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
-You can find the enabled rules in the [ESLint Config](../../.eslintrc.cjs).
+You can find the enabled rules in the [ESLint Config](../../.eslintrc.js).
 
 ## Prettier
 

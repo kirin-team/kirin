@@ -1,18 +1,17 @@
 'use client';
 
-import ErrorComponent from '../../components/Error';
-import { PropsWithDefault } from '../../types';
+import { KirinProps } from '../../types';
 
 export default function GlobalError({
   lang,
-}: PropsWithDefault<{
+}: KirinProps<{
   error: Error;
   reset: () => void;
 }>) {
   return (
     <html lang={lang}>
       <body>
-        <ErrorComponent />
+        <h1>Something went wrong!</h1>
       </body>
     </html>
   );

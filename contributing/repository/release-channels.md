@@ -1,10 +1,10 @@
 # Release Channels and Publishing
 
-Glimpse has two release channels: `stable` and `canary`.
+Kirin has two release channels: `stable` and `canary`.
 
 ## Stable
 
-The stable release is what is visible on [glimpse.d-one.design](https://glimpse.d-one.design).
+The stable release is what is visible on [kirin.gg](https://kirin.gg).
 
 This channel is published at a regular cadence and follows [semantic versioning](https://semver.org).
 

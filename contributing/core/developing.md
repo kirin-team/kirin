@@ -9,7 +9,7 @@ To develop locally:
 2. Clone the Next.js repository (download only recent commits for faster clone):
 
    ```sh
-   gh repo clone d-one-company/glimpse -- --depth=3000 --branch canary --single-branch
+   gh repo clone d-one-company/kirin -- --depth=3000 --branch canary --single-branch
    ```
 
 3. Create a new branch:

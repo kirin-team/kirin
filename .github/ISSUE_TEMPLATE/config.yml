@@ -1,9 +1,9 @@
 blank_issues_enabled: false
 contact_links:
   - name: Ask a Question
-    url: https://github.com/d-one-company/glimpse/discussions
+    url: https://github.com/d-one-company/kirin/discussions
     about: Ask questions and discuss with other community members
 
   - name: Feature Request
-    url: https://github.com/d-one-company/glimpse/discussions/new?category=ideas
+    url: https://github.com/d-one-company/kirin/discussions/new?category=ideas
     about: Feature Requests should be opened as Discussions

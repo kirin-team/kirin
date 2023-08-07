@@ -2,7 +2,7 @@
 
 Anyone can propose a change to Kirin. However, adding new features often requires community discussions before proceeding with the implementation.
 
-Therefore, before opening a PR, you open a [feature request](https://github.com/d-one-company/kirin/discussions/new?category=ideas) and collect feedback.
+Therefore, before opening a PR, you open a [feature request](https://github.com/kirin-team/kirin/discussions/new?category=ideas) and collect feedback.
 
 ## Why use a discussion?
 
@@ -14,4 +14,4 @@ The discussion's goal is to achieve the following:
 
 ## Examples
 
-We user RFCs (Request For Comment), which you can find in [this discussion category](https://github.com/d-one-company/kirin/discussions/categories/rfc). Reading through these, you can get a better understanding of what is expected to be included in a good feature request.
+We user RFCs (Request For Comment), which you can find in [this discussion category](https://github.com/kirin-team/kirin/discussions/categories/rfc). Reading through these, you can get a better understanding of what is expected to be included in a good feature request.

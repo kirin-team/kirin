@@ -5,8 +5,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        *Note:* If you leave out sections, the issue might be moved to [Help](https://github.com/d-one-company/kirin/discussions/categories/help).
-        Feature requests should be opened as [discussions](https://github.com/d-one-company/kirin/discussions/new?category=ideas). [Read more](https://github.com/d-one-company/kirin/blob/canary/contributing/core/adding-features.md).
+        *Note:* If you leave out sections, the issue might be moved to [Help](https://github.com/kirin-team/kirin/discussions/categories/help).
+        Feature requests should be opened as [discussions](https://github.com/kirin-team/kirin/discussions/new?category=ideas). [Read more](https://github.com/kirin-team/kirin/blob/canary/contributing/core/adding-features.md).
 
   - type: checkboxes
     attributes:

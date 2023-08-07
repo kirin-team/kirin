@@ -10,7 +10,7 @@ Choose the right checklist for the change(s) that you're making:
 
 ### Adding a feature
 
-- Implements an existing feature request or RFC. Make sure the feature request has been accepted for implementation before opening a PR. (A discussion must be opened, see https://github.com/d-one-company/kirin/discussions/new?category=ideas)
+- Implements an existing feature request or RFC. Make sure the feature request has been accepted for implementation before opening a PR. (A discussion must be opened, see https://github.com/kirin-team/kirin/discussions/new?category=ideas)
 - Related discussions are linked using `Fixes #N`
 
 ## For Maintainers

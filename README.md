@@ -16,11 +16,11 @@
   <a aria-label="d-one" href="https://d-one.design/">
     <img src="https://img.shields.io/badge/MADE%20BY%20D‒ONE-000000.svg?style=for-the-badge">
   </a>
-  <a aria-label="License" href="https://github.com/d-one-company/kirin/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/d-one-company/kirin.svg?style=for-the-badge&labelColor=000000">
+  <a aria-label="License" href="https://github.com/kirin-team/kirin/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/kirin-team/kirin.svg?style=for-the-badge&labelColor=000000">
   </a>
-  <a aria-label="Community" href="https://github.com/d-one-company/kirin/discussions">
-    <img src="https://img.shields.io/github/discussions/d-one-company/kirin.svg?style=for-the-badge&labelColor=000000">
+  <a aria-label="Community" href="https://github.com/kirin-team/kirin/discussions">
+    <img src="https://img.shields.io/github/discussions/kirin-team/kirin.svg?style=for-the-badge&labelColor=000000">
   </a>
 </p>
 
@@ -43,14 +43,14 @@ Don't forget to give the project a star! Thanks again!
 
 ## Community
 
-The Turbo community can be found on [GitHub Discussions](https://github.com/d-one-company/kirin/discussions), where you can ask questions, voice ideas, and share your projects.
+The Turbo community can be found on [GitHub Discussions](https://github.com/kirin-team/kirin/discussions), where you can ask questions, voice ideas, and share your projects.
 
-Our [Code of Conduct](https://github.com/d-one-company/kirin/blob/main/CODE_OF_CONDUCT.md) applies to all Kirin community channels.
+Our [Code of Conduct](https://github.com/kirin-team/kirin/blob/main/CODE_OF_CONDUCT.md) applies to all Kirin community channels.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
-Distributed under the AGPL v3 License. See our [License](https://github.com/d-one-company/kirin/blob/main/LICENSE) for more information.
+Distributed under the AGPL v3 License. See our [License](https://github.com/kirin-team/kirin/blob/main/LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

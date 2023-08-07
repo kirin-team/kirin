@@ -1,6 +1,6 @@
 # Building
 
-You can build Glimpse, including all type definitions and packages, with:
+You can build Kirin, including all type definitions and packages, with:
 
 ```bash
 pnpm build

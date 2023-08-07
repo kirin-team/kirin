@@ -1,5 +1,5 @@
-'use client';
+import Header from './_components/Header';
 
 export default function Page() {
-  return <h1>Landing</h1>;
+  return <Header />;
 }

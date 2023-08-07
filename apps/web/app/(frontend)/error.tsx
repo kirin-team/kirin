@@ -1,11 +1,5 @@
 'use client';
 
-import ErrorComponent from '../../components/Error';
-import { PropsWithDefault } from '../../types';
-
-export default function Error({}: PropsWithDefault<{
-  error: Error;
-  reset: () => void;
-}>) {
-  return <ErrorComponent />;
+export default function Error({}: { error: Error; reset: () => void }) {
+  return <h1>Something went wrong!</h1>;
 }

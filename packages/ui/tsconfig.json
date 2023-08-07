@@ -1,7 +1,7 @@
 {
-  "extends": "tsconfig/react-native-library",
+  "extends": "@kirin/tsconfig/design-system",
   "include": ["."],
-  "exclude": ["dist", "build", "node_modules"],
+  "exclude": ["dist", "node_modules"],
   "compilerOptions": {
     "strict": true
   }

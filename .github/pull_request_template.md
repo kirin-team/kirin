@@ -10,14 +10,14 @@ Choose the right checklist for the change(s) that you're making:
 
 ### Adding a feature
 
-- Implements an existing feature request or RFC. Make sure the feature request has been accepted for implementation before opening a PR. (A discussion must be opened, see https://github.com/d-one-company/glimpse/discussions/new?category=ideas)
+- Implements an existing feature request or RFC. Make sure the feature request has been accepted for implementation before opening a PR. (A discussion must be opened, see https://github.com/kirin-team/kirin/discussions/new?category=ideas)
 - Related discussions are linked using `Fixes #N`
 
 ## For Maintainers
 
 - Minimal description (aim for explaining to someone not on the team to understand the PR)
 - When linking to a Slack thread, you might want to share details of the conclusion
-- Link both the Linear (Fixes GLMPS-XXX) and the GitHub Issues
+- Link both the Linear (Fixes KIRIN-XXX) and the GitHub Issues
 - Add review comments if necessary to explain to the reviewer the logic behind a change
 
 ### What?

@@ -1,12 +1,10 @@
-import { PropsWithDefault } from '../../../../types';
-
 export default function Layout({
   app,
   landing,
-}: PropsWithDefault<{
+}: {
   app: React.ReactNode;
   landing: React.ReactNode;
-}>) {
-  const isAuthenticated = true;
+}) {
+  const isAuthenticated = false;
   return <>{isAuthenticated ? app : landing}</>;
 }

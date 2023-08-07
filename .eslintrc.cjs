@@ -1,5 +1,5 @@
 module.exports = {
   root: true,
-  extends: ['custom'],
+  extends: ['@kirin'],
   settings: { next: { rootDir: ['apps/*/'] } },
 };

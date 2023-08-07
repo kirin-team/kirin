@@ -5,15 +5,15 @@ body:
   - type: markdown
     attributes:
       value: |
-        *Note:* If you leave out sections, the issue might be moved to [Help](https://github.com/d-one-company/glimpse/discussions/categories/help).
-        Feature requests should be opened as [discussions](https://github.com/d-one-company/glimpse/discussions/new?category=ideas). [Read more](https://github.com/d-one-company/glimpse/blob/canary/contributing/core/adding-features.md).
+        *Note:* If you leave out sections, the issue might be moved to [Help](https://github.com/kirin-team/kirin/discussions/categories/help).
+        Feature requests should be opened as [discussions](https://github.com/kirin-team/kirin/discussions/new?category=ideas). [Read more](https://github.com/kirin-team/kirin/blob/canary/contributing/core/adding-features.md).
 
   - type: checkboxes
     attributes:
       label: Verify canary release
       description: 'Please reproduce the issue on `canary`. It includes all features and fixes that have not been released to the stable version yet. Some issues may already be fixed in the canary version, so please verify that your issue reproduces before opening a new issue.'
       options:
-        - label: I verified that the issue exists in the latest Glimpse canary release
+        - label: I verified that the issue exists in the latest Kirin canary release
           required: true
 
   - type: input
@@ -28,17 +28,17 @@ body:
 
   - type: input
     attributes:
-      label: Which operating system running Glimpse on? (if self-hosting)
+      label: Which operating system running Kirin on? (if self-hosting)
       description: 'Please specify the exact version. For example: Ubuntu 22.04.2 LTS'
 
   - type: input
     attributes:
-      label: How are you deploying Glimpse? (if self-hosting)
+      label: How are you deploying Kirin? (if self-hosting)
       description: 'Please specify the exact version. For example: nginx 1.24'
 
   - type: dropdown
     attributes:
-      label: Which area(s) of Glimpse are affected? (leave empty if unsure)
+      label: Which area(s) of Kirin are affected? (leave empty if unsure)
       multiple: true
       options:
         - 'Web App'

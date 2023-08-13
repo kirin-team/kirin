@@ -1,7 +1,6 @@
 {
   "name": "@kirin/web",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,9 +9,9 @@
   },
   "dependencies": {
     "@kirin/ui": "workspace:*",
-    "clsx": "^2.0.0",
     "negotiator": "^0.6.3",
     "next": "^13.4.12",
+    "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -20,6 +19,8 @@
     "@kirin/eslint-config": "workspace:*",
     "@kirin/tailwind": "workspace:*",
     "@kirin/tsconfig": "workspace:*",
+    "@kirin/utils": "workspace:*",
+    "@svgr/webpack": "^8.0.1",
     "@types/negotiator": "^0.6.1",
     "@types/node": "^18.17.1",
     "@types/react": "^18.2.18",

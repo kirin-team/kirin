@@ -1,13 +1,12 @@
 'use client';
 
-import { CssBaseline, KirinProvider } from '@kirin/ui';
-import { PropsWithChildren } from 'react';
+import { ThemeProvider, Toaster } from '@kirin/ui';
 
-export function Providers({ children }: PropsWithChildren) {
+export function Providers({ children }) {
   return (
-    <KirinProvider themeType="dark">
-      <CssBaseline />
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       {children}
-    </KirinProvider>
+      <Toaster />
+    </ThemeProvider>
   );
 }

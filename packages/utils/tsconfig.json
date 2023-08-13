@@ -1,0 +1,10 @@
+{
+  "extends": "@kirin/tsconfig/base",
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": false,
+    "outDir": "dist"
+  },
+  "include": ["**/*.ts*"],
+  "exclude": ["dist", "node_modules"]
+}

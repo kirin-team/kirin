@@ -13,7 +13,7 @@
     "matrix-client"
   ],
   "author": {
-    "name": "Nemanja Stanic",
+    "name": "d-one",
     "email": "nemanja@d-one.design",
     "url": "https://d-one.design"
   },
@@ -22,6 +22,7 @@
   },
   "packageManager": "pnpm@8.6.2",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "build": "turbo run build --remote-cache-timeout 60 --summarize true",
     "dev": "dotenv -- turbo run dev --parallel",

@@ -1,8 +1,14 @@
 {
   "extends": "@kirin/tsconfig/design-system",
-  "include": ["."],
-  "exclude": ["dist", "node_modules"],
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "noEmit": false,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["**/*.ts*"],
+  "exclude": ["dist", "node_modules"]
 }

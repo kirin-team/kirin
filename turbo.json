@@ -3,12 +3,10 @@
   "globalDependencies": ["**/.env.*local"],
   "globalEnv": ["NODE_ENV"],
   "pipeline": {
-    "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
-    },
-    "typescript": {},
-    "dev": { "cache": false, "persistent": true },
+    "build": { "dependsOn": ["^build"] },
+    "lint": { "dependsOn": ["^build"] },
+    "lint:fix": { "dependsOn": ["^build"] },
+    "dev": { "dependsOn": ["^build"], "cache": false, "persistent": true },
     "clean": { "cache": false }
   }
 }

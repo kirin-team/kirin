@@ -1,8 +1,8 @@
 {
   "name": "@kirin/tailwind",
   "version": "0.0.0",
-  "private": true,
   "devDependencies": {
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-animate": "^1.0.6"
   }
 }

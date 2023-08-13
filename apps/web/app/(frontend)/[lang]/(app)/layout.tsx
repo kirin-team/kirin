@@ -1,10 +1,10 @@
 export default function Layout({
   app,
-  landing,
+  home,
 }: {
   app: React.ReactNode;
-  landing: React.ReactNode;
+  home: React.ReactNode;
 }) {
   const isAuthenticated = false;
-  return <>{isAuthenticated ? app : landing}</>;
+  return <>{isAuthenticated ? app : home}</>;
 }

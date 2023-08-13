@@ -1,6 +1,6 @@
 'use client';
 
-import { KirinProps } from '../../types';
+import { KirinProps } from '@types';
 
 export default function GlobalError({
   lang,

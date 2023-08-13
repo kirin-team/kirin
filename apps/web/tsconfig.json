@@ -1,6 +1,19 @@
 {
   "extends": "@kirin/tsconfig/nextjs.json",
-  "compilerOptions": { "plugins": [{ "name": "next" }] },
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@config/*": ["./config/*"],
+      "@icons/*": ["./icons/*"],
+      "@locales/*": ["./locales/*"],
+      "@public/*": ["./public/*"],
+      "@styles": ["./styles/globals.css"],
+      "@types": ["./types/index.ts"],
+      "@utils": ["./utils/*"]
+    }
+  },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

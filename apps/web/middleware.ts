@@ -1,7 +1,7 @@
-import Negotiator from 'negotiator';
-import { NextResponse } from 'next/server';
+import Negotiator from "negotiator";
+import { NextResponse } from "next/server";
 
-const locales = ['en'] as const;
+const locales = ["en"] as const;
 export type Locale = (typeof locales)[number];
 
 function getLocale({ headers }) {
@@ -23,4 +23,4 @@ export function middleware(request) {
   }
 }
 
-export const config = { matcher: ['/((?!_next).*)'] };
+export const config = { matcher: ["/((?!_next).*)"] };

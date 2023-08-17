@@ -7,45 +7,45 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from '@kirin/ui';
-import Link from 'next/link';
+} from "@kirin/ui";
+import Link from "next/link";
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: 'Something',
-    href: '/something',
+    title: "Something",
+    href: "/something",
     description:
-      'Something something something something something something something.',
+      "Something something something something something something something.",
   },
   {
-    title: 'Something',
-    href: '/something',
+    title: "Something",
+    href: "/something",
     description:
-      'Something something something something something something something.',
+      "Something something something something something something something.",
   },
   {
-    title: 'Something',
-    href: '/something',
+    title: "Something",
+    href: "/something",
     description:
-      'Something something something something something something something.',
+      "Something something something something something something something.",
   },
   {
-    title: 'Something',
-    href: '/something',
+    title: "Something",
+    href: "/something",
     description:
-      'Something something something something something something something.',
+      "Something something something something something something something.",
   },
   {
-    title: 'Something',
-    href: '/something',
+    title: "Something",
+    href: "/something",
     description:
-      'Something something something something something something something.',
+      "Something something something something something something something.",
   },
   {
-    title: 'Something',
-    href: '/something',
+    title: "Something",
+    href: "/something",
     description:
-      'Something something something something something something something.',
+      "Something something something something something something something.",
   },
 ];
 

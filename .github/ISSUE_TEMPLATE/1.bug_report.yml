@@ -1,5 +1,5 @@
 name: Bug Report
-labels: ['template: bug']
+labels: ["template: bug"]
 
 body:
   - type: markdown
@@ -11,7 +11,7 @@ body:
   - type: checkboxes
     attributes:
       label: Verify canary release
-      description: 'Please reproduce the issue on `canary`. It includes all features and fixes that have not been released to the stable version yet. Some issues may already be fixed in the canary version, so please verify that your issue reproduces before opening a new issue.'
+      description: "Please reproduce the issue on `canary`. It includes all features and fixes that have not been released to the stable version yet. Some issues may already be fixed in the canary version, so please verify that your issue reproduces before opening a new issue."
       options:
         - label: I verified that the issue exists in the latest Kirin canary release
           required: true
@@ -19,31 +19,31 @@ body:
   - type: input
     attributes:
       label: Which browser are you using? (if relevant)
-      description: 'Please specify the exact version. For example: Chrome 100.0.4878.0'
+      description: "Please specify the exact version. For example: Chrome 100.0.4878.0"
 
   - type: input
     attributes:
       label: Which device are you using? (if relevant)
-      description: 'Please specify the exact version. For example: Apple iPhone 12 Pro Max (iOS 16.5)'
+      description: "Please specify the exact version. For example: Apple iPhone 12 Pro Max (iOS 16.5)"
 
   - type: input
     attributes:
       label: Which operating system running Kirin on? (if self-hosting)
-      description: 'Please specify the exact version. For example: Ubuntu 22.04.2 LTS'
+      description: "Please specify the exact version. For example: Ubuntu 22.04.2 LTS"
 
   - type: input
     attributes:
       label: How are you deploying Kirin? (if self-hosting)
-      description: 'Please specify the exact version. For example: nginx 1.24'
+      description: "Please specify the exact version. For example: nginx 1.24"
 
   - type: dropdown
     attributes:
       label: Which area(s) of Kirin are affected? (leave empty if unsure)
       multiple: true
       options:
-        - 'Web App'
-        - 'Native Mobile App'
-        - 'Internationalization (i18n)'
+        - "Web App"
+        - "Native Mobile App"
+        - "Internationalization (i18n)"
 
   - type: input
     attributes:

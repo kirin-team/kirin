@@ -9,14 +9,15 @@
   },
   "dependencies": {
     "@kirin/ui": "workspace:*",
+    "@radix-ui/react-icons": "^1.3.0",
     "negotiator": "^0.6.3",
     "next": "^13.4.12",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hotkeys-hook": "^4.4.1"
   },
   "devDependencies": {
-    "@kirin/eslint-config": "workspace:*",
     "@kirin/tailwind": "workspace:*",
     "@kirin/tsconfig": "workspace:*",
     "@kirin/utils": "workspace:*",

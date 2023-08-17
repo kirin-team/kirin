@@ -2,7 +2,6 @@
   "name": "kirin",
   "version": "0.1.0",
   "description": "What a Matrix client should be.",
-  "license": "AGPL-3.0-only",
   "keywords": [
     "kirin",
     "kirinapp",
@@ -12,15 +11,12 @@
     "matrix-org",
     "matrix-client"
   ],
+  "license": "AGPL-3.0-only",
   "author": {
     "name": "d-one",
     "email": "nemanja@d-one.design",
     "url": "https://d-one.design"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "packageManager": "pnpm@8.6.2",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
@@ -29,19 +25,26 @@
     "clean": "turbo clean",
     "lint": "run-p prettier:check eslint:check",
     "lint:fix": "pnpm prettier:fix && pnpm eslint:fix",
-    "eslint:check": "eslint . --ext js,cjs,jsx,ts,tsx --max-warnings=0 --config .eslintrc.cjs --no-eslintrc",
+    "eslint:check": "eslint . --ext js,cjs,mjs,jsx,ts,tsx --max-warnings=0",
     "eslint:fix": "pnpm eslint:check --fix",
     "prettier:check": "prettier --check . --ignore-path .gitignore",
     "prettier:fix": "pnpm prettier:check --write"
   },
   "devDependencies": {
     "dotenv-cli": "^7.2.1",
-    "eslint": "^7.32.0",
-    "@kirin/eslint-config": "workspace:*",
+    "eslint": "^8.47.0",
+    "eslint-config-next": "^13.4.15",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-turbo": "^1.10.12",
     "husky": "^8.0.3",
+    "next": "^13.4.12",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.6.2",
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

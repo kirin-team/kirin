@@ -1,12 +1,18 @@
-'use client';
+"use client";
 
-import { ThemeProvider, Toaster } from '@kirin/ui';
+import { ThemeProvider, Toaster } from "@kirin/ui";
+import { HotkeysProvider } from "react-hotkeys-hook";
+import Commander from "../../components/Commander";
 
 export function Providers({ children }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      {children}
-      <Toaster />
-    </ThemeProvider>
+    <HotkeysProvider>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <Commander>
+          {children}
+          <Toaster />
+        </Commander>
+      </ThemeProvider>
+    </HotkeysProvider>
   );
 }

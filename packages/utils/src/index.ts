@@ -1,2 +1,2 @@
-export * from './cn';
-export * from './is-mac';
+export * from "./cn";
+export * from "./is-mac";

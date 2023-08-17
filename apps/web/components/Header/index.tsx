@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import Navigation from '@components/Navigation';
-import ProfileDropdown from '@components/ProfileDropdown';
-import { Button } from '@kirin/ui';
-import { cn } from '@kirin/utils';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import Navigation from "@components/Navigation";
+import ProfileDropdown from "@components/ProfileDropdown";
+import { Button } from "@kirin/ui";
+import { cn } from "@kirin/utils";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const isAuthorized = true;
@@ -14,40 +14,40 @@ export default function Header() {
   const handleScroll = () => setShowBorder(window.scrollY > 0);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div
       className={cn(
-        'sticky top-0 z-[101] flex min-h-[64px] w-full max-w-full justify-center bg-transparent transition-[box-shadow,background-color] duration-200 ease-in-out',
+        "sticky top-0 z-[101] flex min-h-[64px] w-full max-w-full justify-center bg-transparent transition-[box-shadow,background-color] duration-200 ease-in-out",
         {
-          'before: shadow-[inset_0_-1px_0_0_hsla(0,0%,100%,.1)] before:absolute before:-top-[1px] before:-z-[1] before:h-full before:w-full before:backdrop-blur-[5px] before:backdrop-saturate-[180%]':
+          "before:shadow-header before:absolute before:-top-[1px] before:-z-[1] before:h-full before:w-full before:backdrop-blur-[5px] before:backdrop-saturate-[180%]":
             showBorder,
         }
       )}
     >
       <header
         className={cn(
-          'm-auto w-full px-6',
-          'lg:flex lg:w-[1448px] lg:flex-row lg:items-center'
+          "m-auto w-full px-6",
+          "lg:flex lg:w-[1448px] lg:flex-row lg:items-center"
         )}
       >
         <div className="flex flex-1 items-center justify-center">
           <div>
             <Button
-              variant="link"
+              variant="tertiary"
               asChild
-              className="-m-1 flex rounded-md p-1 text-2xl font-semibold"
+              className="-m-1 flex rounded p-1 text-2xl font-semibold hover:bg-inherit"
             >
               <Link href="/">Kirin</Link>
             </Button>
           </div>
           <div
             className={cn(
-              'ml-8 hidden w-auto',
-              'lg:flex lg:w-full lg:flex-1 lg:items-center lg:justify-center lg:bg-transparent'
+              "ml-8 hidden w-auto",
+              "lg:flex lg:w-full lg:flex-1 lg:items-center lg:justify-center lg:bg-transparent"
             )}
           >
             <Navigation />

@@ -1,4 +1,10 @@
 {
+  "files.associations": { "*.css": "tailwindcss" },
+  "tailwindCSS.experimental.configFile": "packages/tailwind/tailwind.config.mjs",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
   "eslint.workingDirectories": [
     { "pattern": "apps/*/" },
     { "pattern": "packages/*/" }

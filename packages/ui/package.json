@@ -42,7 +42,6 @@
     "react-hook-form": "^7.45.4"
   },
   "devDependencies": {
-    "@kirin/eslint-config": "workspace:*",
     "@kirin/tailwind": "workspace:*",
     "@kirin/tsconfig": "workspace:*",
     "@kirin/utils": "workspace:*",

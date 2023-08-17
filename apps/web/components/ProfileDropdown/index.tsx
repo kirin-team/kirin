@@ -1,4 +1,4 @@
-import External from '@icons/external.svg';
+import { useCommand } from "@components/Commander";
 import {
   Avatar,
   AvatarFallback,
@@ -14,9 +14,12 @@ import {
   DropdownMenuTrigger,
   Keybind,
   KeybindGroup,
-} from '@kirin/ui';
+} from "@kirin/ui";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 export default function ProfileDropdown() {
+  const { setOpen } = useCommand();
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="outline-none">
@@ -27,14 +30,14 @@ export default function ProfileDropdown() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-[250px]">
         <DropdownMenuLabel>Nemanja Stanic</DropdownMenuLabel>
-        <DropdownMenuLabel className="-mt-3 mb-1 font-normal text-muted-foreground">
+        <DropdownMenuLabel className="-mt-3 mb-1 font-normal text-accent-6">
           nemanjastanic@pm.me
         </DropdownMenuLabel>
         <DropdownMenuGroup>
           <DropdownMenuItem>Open Kirin</DropdownMenuItem>
           <DropdownMenuItem>Settings</DropdownMenuItem>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>
+          <DropdownMenuItem onClick={() => setOpen(true)}>
             Command Menu
             <DropdownMenuSecondary>
               <KeybindGroup>
@@ -44,12 +47,12 @@ export default function ProfileDropdown() {
             </DropdownMenuSecondary>
           </DropdownMenuItem>
           <DropdownMenuSeparator />
-          <DropdownMenuItem icon={<External width={16} height={16} />}>
+          <DropdownMenuItem icon={<ExternalLinkIcon width={16} height={16} />}>
             Kirin Homepage
           </DropdownMenuItem>
           <DropdownMenuItem>Log Out</DropdownMenuItem>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>
+          <DropdownMenuItem asChild>
             <Button className="w-full">Upgrade to Pro</Button>
           </DropdownMenuItem>
         </DropdownMenuGroup>

@@ -3,11 +3,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ['@kirin/ui'],
+  transpilePackages: ["@kirin/ui"],
   compiler: { removeConsole: true },
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
-      rule.test?.test?.('.svg')
+      rule.test?.test?.(".svg")
     );
 
     config.module.rules.push(
@@ -20,7 +20,7 @@ const nextConfig = {
         test: /\.svg$/i,
         issuer: /\.[jt]sx?$/,
         resourceQuery: { not: /url/ },
-        use: ['@svgr/webpack'],
+        use: ["@svgr/webpack"],
       }
     );
 

@@ -6,7 +6,6 @@
     "paths": {
       "@components/*": ["./components/*"],
       "@config/*": ["./config/*"],
-      "@icons/*": ["./icons/*"],
       "@locales/*": ["./locales/*"],
       "@public/*": ["./public/*"],
       "@styles": ["./styles/globals.css"],
@@ -14,6 +13,12 @@
       "@utils": ["./utils/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "tailwind.config.mjs"
+  ],
   "exclude": ["node_modules"]
 }

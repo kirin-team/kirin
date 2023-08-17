@@ -1,0 +1,157 @@
+import tailwindAnimate from "tailwindcss-animate";
+import { fontFamily } from "tailwindcss/defaultTheme";
+
+/** @type {import('tailwindcss').Config} */
+const config = {
+  darkMode: ["class"],
+  content: ["{app,components,src}/**/*.{js,jsx,ts,tsx,mdx}"],
+  theme: {
+    screens: {
+      xs: "600px",
+      "xs-max": { max: "600px" },
+      "xs-min-max": { min: "600px", max: "799px" },
+      sm: "800px",
+      "sm-max": { max: "800px" },
+      "sm-min-max": { min: "800px", max: "959px" },
+      md: "960px",
+      "md-max": { max: "960px" },
+      "md-min-max": { min: "960px", max: "1149px" },
+      lg: "1150px",
+      "lg-max": { max: "1150px" },
+      "lg-min-max": { min: "1150px", max: "1247px" },
+      xl: "1248px",
+      "xl-max": { max: "1248px" },
+      "xl-min-max": { min: "1248px", max: "1439px" },
+      "2xl": "1440px",
+      "2xl-max": { max: "1440px" },
+    },
+    extend: {
+      fontSize: { DEFAULT: "var(--font-size)" },
+      fontFamily: { sans: ["var(--font-sans)", ...fontFamily.sans] },
+      borderRadius: { DEFAULT: "var(--radius)" },
+      ringColor: { DEFAULT: "hsl(var(--focus-color), <alpha-value>)" },
+      spacing: {
+        space: "var(--space)",
+        "space-2x": "var(--space-2x)",
+        "space-3x": "var(--space-3x)",
+        "space-4x": "var(--space-4x)",
+        "space-6x": "var(--space-6x)",
+        "space-8x": "var(--space-8x)",
+        "space-10x": "var(--space-10x)",
+        "space-12x": "var(--space-12x)",
+        "space-16x": "var(--space-16x)",
+        "space-24x": "var(--space-24x)",
+        "space-32x": "var(--space-32x)",
+        "space-48x": "var(--space-48x)",
+        "space-64x": "var(--space-64x)",
+        "space-small": "var(--space-small)",
+        "space-medium": "var(--space-medium)",
+        "space-large": "var(--space-large)",
+      },
+      gap: {
+        gap: "var(--gap)",
+        "gap-half": "var(--gap-half)",
+        "gap-double": "var(--gap-double)",
+        "gap-section": "var(--gap-section)",
+      },
+      width: {
+        page: "var(--page-width)",
+        "page-with-margin": "var(--page-width-with-margin)",
+      },
+      height: {
+        header: "var(--header-height)",
+      },
+      padding: { page: "var(--page-margin)" },
+      margin: { page: "var(--page-margin)" },
+      boxShadow: {
+        border: "var(--shadow-border)",
+        small: "var(--shadow-small)",
+        "border-small": "var(--shadow-border-small)",
+        medium: "var(--shadow-medium)",
+        "border-medium": "var(--shadow-border-medium)",
+        large: "var(--shadow-large)",
+        "border-large": "var(--shadow-border-large)",
+        tooltip: "var(--shadow-tooltip)",
+        modal: "var(--shadow-modal)",
+        fullscreen: "var(--shadow-fullscreen)",
+        header: "var(--header-border-bottom)",
+      },
+      backgroundColor: { header: "var(--header-background)" },
+      colors: {
+        background: {
+          DEFAULT: "hsl(var(--background), <alpha-value>)",
+          100: "hsl(var(--background-100), <alpha-value>)",
+        },
+        foreground: "hsl(var(--foreground), <alpha-value>)",
+        accent: {
+          1: "hsl(var(--accent-1), <alpha-value>)",
+          2: "hsl(var(--accent-2), <alpha-value>)",
+          3: "hsl(var(--accent-3), <alpha-value>)",
+          4: "hsl(var(--accent-4), <alpha-value>)",
+          5: "hsl(var(--accent-5), <alpha-value>)",
+          6: "hsl(var(--accent-6), <alpha-value>)",
+          7: "hsl(var(--accent-7), <alpha-value>)",
+          8: "hsl(var(--accent-8), <alpha-value>)",
+        },
+        error: {
+          DEFAULT: "hsl(var(--error), <alpha-value>)",
+          light: "hsl(var(--error-light), <alpha-value>)",
+          lighter: "hsl(var(--error-lighter), <alpha-value>)",
+          dark: "hsl(var(--error-dark), <alpha-value>)",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success), <alpha-value>)",
+          light: "hsl(var(--success-light), <alpha-value>)",
+          lighter: "hsl(var(--success-lighter), <alpha-value>)",
+          dark: "hsl(var(--success-dark), <alpha-value>)",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning), <alpha-value>)",
+          light: "hsl(var(--warning-light), <alpha-value>)",
+          lighter: "hsl(var(--warning-lighter), <alpha-value>)",
+          dark: "hsl(var(--warning-dark), <alpha-value>)",
+        },
+        violet: {
+          DEFAULT: "hsl(var(--violet), <alpha-value>)",
+          light: "hsl(var(--violet-light), <alpha-value>)",
+          lighter: "hsl(var(--violet-lighter), <alpha-value>)",
+          dark: "hsl(var(--violet-dark), <alpha-value>)",
+        },
+        cyan: {
+          DEFAULT: "hsl(var(--cyan), <alpha-value>)",
+          light: "hsl(var(--cyan-light), <alpha-value>)",
+          lighter: "hsl(var(--cyan-lighter), <alpha-value>)",
+          dark: "hsl(var(--cyan-dark), <alpha-value>)",
+        },
+        highlight: {
+          purple: "hsl(var(--highlight-purple), <alpha-value>)",
+          magenta: "hsl(var(--highlight-magenta), <alpha-value>)",
+          pink: "hsl(var(--highlight-pink), <alpha-value>)",
+          yellow: "hsl(var(--highlight-yellow), <alpha-value>)",
+        },
+        selection: {
+          DEFAULT: "hsl(var(--selection), <alpha-value>)",
+          text: "hsl(var(--selection-text), <alpha-value>)",
+        },
+      },
+      transitionTimingFunction: { DEFAULT: "ease" },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+    },
+  },
+  plugins: [tailwindAnimate],
+};
+
+export default config;
